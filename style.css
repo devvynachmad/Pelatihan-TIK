@@ -1,29 +1,42 @@
-
-
-
-.kartu-profil img {
-  width: 150px;
-  border-radius: 50%; /* Trik membuat gambar persegi menjadi lingkaran sempurna */
-}
-.kartu-profil {
-  /* ... (kode dari slide sebelumnya) ... */
-  text-allign: center; /* menengahkan semua teks dalam kartu */
-}
+/* ==========================================================================
+   1. PENGATURAN HALAMAN UTAMA (BODY)
+   ========================================================================== */
 body {
-background.color:  #000000;  /* Warna hitam  */
+    background-color: #000000;       /* Perbaikan: Menggunakan strip (-), bukan titik */
+    font-family: Arial, sans-serif;  /* Perbaikan: Dimasukkan ke dalam blok body */
+    color: #ffffff;                  /* Perbaikan: Diubah ke putih agar terlihat di background hitam */
+    margin: 0;
+    padding: 0;
 }
-  font.family: Arial, sans-serif; /* Hai :D */
-color:  #000000  /* Warna teks utama (hitam) */
-}
-.kartu-profil {
-  width: 300px;
-  margin: 50px auto; /* 50px jarak atas/bawah, auto mengarahkan kiri/kanan  */ 
-  padding: 20px;
-  background-color: white;
-  border-radius:  15px; /* membuat sudut jadi melengkung */
-  box-shadow: 0 4px  8px rgba(0,0,0,0,1); /* Efek bayangan */
-}
-  
-  
 
-  
+/* ==========================================================================
+   2. DESAIN KARTU PROFIL
+   ========================================================================== */
+.kartu-profil {
+    width: 300px;
+    margin: 50px auto;               /* Jarak atas-bawah 50px, kiri-kanan otomatis ke tengah */ 
+    padding: 20px;
+    background-color: #ffffff;       /* Latar belakang kartu berwarna putih */
+    color: #333333;                  /* Warna teks khusus di dalam kartu agar kontras (gelap) */
+    border-radius: 15px;             /* Membuat sudut kartu melengkung */
+    
+    /* Perbaikan: Mengubah koma terakhir menjadi titik (0.1) untuk efek transparansi bayangan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    /* Perbaikan: Penggabungan selektor dan perbaikan typo 'text-allign' menjadi 'text-align' */
+    text-align: center;              /* Memosisikan seluruh teks & konten kartu ke tengah */
+}
+
+/* ==========================================================================
+   3. DESAIN FOTO PROFIL
+   ========================================================================== */
+.kartu-profil img {
+    width: 150px;
+    height: 150px;                   /* Tambahan: Mengunci tinggi gambar agar tetap proporsional */
+    object-fit: cover;               /* Tambahan: Memastikan foto tidak lonjong/penyok saat dipotong */
+    border-radius: 50%;              /* Mengubah foto kotak menjadi lingkaran sempurna */
+    margin-bottom: 15px;             /* Tambahan: Memberi jarak tipis di bawah foto */
+}
+
+
+
