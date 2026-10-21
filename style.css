@@ -1,3 +1,14 @@
+
+
+
+.kartu-profil img {
+  width: 150px;
+  border-radius: 50%; /* Trik membuat gambar persegi menjadi lingkaran sempurna */
+}
+.kartu-profil {
+  /* ... (kode dari slide sebelumnya) ... */
+  text-allign: center; /* menengahkan semua teks dalam kartu */
+}
 body {
 background.color:  #000000;  /* Warna hitam  */
 }
@@ -12,17 +23,6 @@ color:  #000000  /* Warna teks utama (hitam) */
   border-radius:  15px; /* membuat sudut jadi melengkung */
   box-shadow: 0 4px  8px rgba(0,0,0,0,1); /* Efek bayangan */
 }
-
-
-.kartu-profil img {
-  width: 150px;
-  border-radius: 50%; /* Trik membuat gambar persegi menjadi lingkaran sempurna */
-}
-.kartu-profil {
-  /* ... (kode dari slide sebelumnya) ... */
-  text-allign: center; /* menengahkan semua teks dalam kartu */
-}
-
   
   
 
